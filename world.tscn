@@ -1,0 +1,163 @@
+[gd_scene load_steps=24 format=3 uid="uid://dv1syolijfw1l"]
+
+[ext_resource type="Script" uid="uid://davxwd1m4br63" path="res://main.gd" id="1_f3sb7"]
+[ext_resource type="PackedScene" uid="uid://kfuyhi5g2gnm" path="res://Blueprints/player.tscn" id="2_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://cfkkvhx88wb77" path="res://Objects/Wand.tscn" id="3_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://yujwbpxcjo8l" path="res://target.tscn" id="5_036b0"]
+[ext_resource type="Script" uid="uid://bciqyrxiutf0n" path="res://spawner.gd" id="6_dwbse"]
+[ext_resource type="PackedScene" uid="uid://b4vcu1g158uxb" path="res://Assets/MainRoom.glb" id="7_gbfbk"]
+[ext_resource type="PackedScene" uid="uid://c06n0yyou5nwm" path="res://Objects/notice_board.tscn" id="7_pkg7o"]
+[ext_resource type="PackedScene" uid="uid://c26bnu4h50a8j" path="res://game_over_panel.tscn" id="9_ioo17"]
+[ext_resource type="PackedScene" uid="uid://j38vx80oxv32" path="res://BalloonScoreUI.tscn" id="9_wse8f"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gv5m4"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_f3sb7"]
+sky_material = SubResource("ProceduralSkyMaterial_gv5m4")
+
+[sub_resource type="Environment" id="Environment_fj7yv"]
+background_mode = 2
+sky = SubResource("Sky_f3sb7")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tlwt5"]
+size = Vector3(10, 0.302975, 11.045)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aqk2v"]
+albedo_color = Color(0.216023, 0.0557045, 2.40654e-08, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_036b0"]
+material = SubResource("StandardMaterial3D_aqk2v")
+size = Vector3(10, 0.1, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aqk2v"]
+size = Vector3(3.01909, 0.826492, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gbfbk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_70uel"]
+size = Vector3(7.1506, 1, 7.31744)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ioo17"]
+size = Vector3(2.20459, 4.97974, 9.19135)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wse8f"]
+size = Vector3(2.60629, 5.76178, 8.89709)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ic0uy"]
+size = Vector3(12.0402, 5.43842, 1.20898)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k3n1d"]
+size = Vector3(13.1289, 6.2041, 1.64404)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2o6r5"]
+size = Vector3(2.96149, 1.27441, 4.22369)
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_f3sb7")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_fj7yv")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866024, -0.433016, 0.250001, 0.43974, -0.897577, -0.0313612, 0.237975, 0.0827758, 0.967738, 1.74045, 2.7286, 2.74131)
+visible = false
+shadow_enabled = true
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.13597, 0)
+omni_range = 28.284
+omni_attenuation = 0.7
+
+[node name="XROrigin3D" parent="." instance=ExtResource("2_fj7yv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.68176, -0.220411)
+
+[node name="Ground" type="StaticBody3D" parent="."]
+transform = Transform3D(1.01225, 0, 0, 0, 1.01225, 0, 0, 0, 0.795202, 0, -0.0551452, -0.189718)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+transform = Transform3D(1, 0, 0, 0, 1.001, 0, 0, 0, 1, 0, 0.10159, 0.522522)
+shape = SubResource("BoxShape3D_tlwt5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+mesh = SubResource("BoxMesh_036b0")
+
+[node name="Wand" parent="." instance=ExtResource("3_tlwt5")]
+transform = Transform3D(0.467328, 0, -0.884084, 0, 1, 0, 0.884084, 0, 0.467328, -3.32272, 0.981116, -3.88359)
+
+[node name="Table" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.50505, 0, -3.96811)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Table"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.129998, 0.474719, 0)
+shape = SubResource("BoxShape3D_aqk2v")
+
+[node name="Spawner" type="Node3D" parent="." node_paths=PackedStringArray("balloon_ui", "platform_node", "wand")]
+script = ExtResource("6_dwbse")
+balloon_scene = ExtResource("5_036b0")
+balloon_ui = NodePath("../BalloonUI")
+platform_node = NodePath("SpawnArea")
+spawn_interval = 2.0
+wand = NodePath("../Wand")
+
+[node name="SpawnTimer" type="Timer" parent="Spawner"]
+wait_time = 2.0
+
+[node name="StopSpawnTimer" type="Timer" parent="Spawner"]
+wait_time = 10.0
+one_shot = true
+
+[node name="SpawnArea" type="StaticBody3D" parent="Spawner"]
+transform = Transform3D(1.01225, 0, 0, 0, 1.01225, 0, 0, 0, 0.795202, 0, -0.0551452, -0.189718)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Spawner/SpawnArea"]
+transform = Transform3D(7.1139, 0, 0, 0, 0.999866, 0, 0, 0, 7.22919, 0, -0.4527, 0.699462)
+mesh = SubResource("BoxMesh_gbfbk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Spawner/SpawnArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0228672, -0.449785, 0.659983)
+shape = SubResource("BoxShape3D_70uel")
+
+[node name="NoticeBoard" parent="." instance=ExtResource("7_pkg7o")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -3.34744, 2.22181, -4.43689)
+
+[node name="Room" type="StaticBody3D" parent="."]
+
+[node name="MainRoom" parent="Room" instance=ExtResource("7_gbfbk")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Room"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.37578, 2.48238, 0.0956116)
+visible = false
+shape = SubResource("BoxShape3D_ioo17")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Room"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5167, 2.73345, 0.0314636)
+visible = false
+shape = SubResource("BoxShape3D_wse8f")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Room"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.187051, 2.56969, -4.77158)
+visible = false
+shape = SubResource("BoxShape3D_ic0uy")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Room"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0634766, 2.60205, 4.71328)
+visible = false
+shape = SubResource("BoxShape3D_k3n1d")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Room"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.63282, 0.83841, 1.51436)
+visible = false
+shape = SubResource("BoxShape3D_2o6r5")
+
+[node name="BalloonUI" parent="." instance=ExtResource("9_wse8f")]
+visible = false
+
+[node name="GameOverPanel" parent="." instance=ExtResource("9_ioo17")]
+
+[connection signal="timeout" from="Spawner/SpawnTimer" to="Spawner" method="_on_spawn_timer_timeout"]
+[connection signal="timeout" from="Spawner/StopSpawnTimer" to="Spawner" method="_on_StopSpawnTimer_timeout"]
+[connection signal="countdown_finished" from="BalloonUI" to="GameOverPanel" method="_on_balloon_ui_countdown_finished"]

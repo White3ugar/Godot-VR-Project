@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://j38vx80oxv32"]
+
+[ext_resource type="Script" uid="uid://diukjwsuitadr" path="res://balloon_score_ui.gd" id="1_m7nud"]
+[ext_resource type="FontFile" uid="uid://dcltext1qkvxg" path="res://Assets/Font Assets/Sakitu Baelah Clean.otf" id="2_5wi0f"]
+
+[node name="BalloonCount" type="CanvasLayer"]
+script = ExtResource("1_m7nud")
+
+[node name="BalloonCountLabel" type="Label" parent="."]
+offset_left = 22.0
+offset_right = 199.0
+offset_bottom = 40.0
+theme_override_fonts/font = ExtResource("2_5wi0f")
+theme_override_font_sizes/font_size = 40
+text = "Balloons Popped: 0"
+
+[node name="TimerLabel" type="Label" parent="."]
+offset_left = 26.0
+offset_top = 52.0
+offset_right = 66.0
+offset_bottom = 75.0
+theme_override_fonts/font = ExtResource("2_5wi0f")
+theme_override_font_sizes/font_size = 40
+text = "Time Left: 30 s"

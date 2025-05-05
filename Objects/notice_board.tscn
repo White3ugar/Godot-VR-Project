@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c06n0yyou5nwm"]
+
+[ext_resource type="PackedScene" uid="uid://d0iynqs0np58" path="res://Assets/low_poly_notice_board.glb" id="1_h36fy"]
+[ext_resource type="FontFile" uid="uid://dcltext1qkvxg" path="res://Assets/Font Assets/Sakitu Baelah Clean.otf" id="2_6jlun"]
+
+[node name="NoticeBoard" type="Node3D"]
+
+[node name="noticeBoardModel" parent="." instance=ExtResource("1_h36fy")]
+transform = Transform3D(23.3106, 0, 0, 0, -1.01894e-06, -23.3106, 0, 23.3106, -1.01894e-06, 0, 0, 0)
+
+[node name="noticeText" type="Label3D" parent="."]
+transform = Transform3D(0.304256, 0, 0, 0, 0.304256, 0, 0, 0, 0.255764, -0.000443064, 0.106985, 0.0561059)
+modulate = Color(0.603221, 0.542496, 0.473484, 1)
+text = "Grab the wand! 
+ Balloons pop in after 3s!"
+font = ExtResource("2_6jlun")
+font_size = 300
+outline_size = 1

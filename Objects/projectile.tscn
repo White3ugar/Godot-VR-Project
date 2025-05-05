@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://b4b4mlq7yv7sx"]
+
+[ext_resource type="PackedScene" uid="uid://dx87kscelglqa" path="res://Assets/glass_ball_ii.glb" id="1_stnin"]
+[ext_resource type="Script" uid="uid://do1jnjb7s8122" path="res://Objects/Projectile.gd" id="2_u7ffc"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_u7ffc"]
+radius = 0.152618
+
+[node name="Projectile" type="RigidBody3D"]
+collision_layer = 2
+
+[node name="EnergyBall" parent="." instance=ExtResource("1_stnin")]
+transform = Transform3D(0.002, 0, 0, 0, 0.002, 0, 0, 0, 0.002, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00540373, 0, 0.129014)
+shape = SubResource("SphereShape3D_u7ffc")
+script = ExtResource("2_u7ffc")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.5
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="CollisionShape3D" method="_on_timer_timeout"]

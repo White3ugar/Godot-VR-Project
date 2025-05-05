@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://yujwbpxcjo8l"]
+
+[ext_resource type="Script" uid="uid://toges7pbm4p0" path="res://target.gd" id="1_e1yvt"]
+[ext_resource type="PackedScene" uid="uid://8w5bnrahcn81" path="res://Assets/indian_smile_balloon.glb" id="1_t2jmu"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_e1yvt"]
+radius = 0.421364
+
+[node name="Target" type="Node3D"]
+script = ExtResource("1_e1yvt")
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.48401, -0.0189036)
+shape = SubResource("SphereShape3D_e1yvt")
+
+[node name="TargetBalloon" parent="Area3D" instance=ExtResource("1_t2jmu")]
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
