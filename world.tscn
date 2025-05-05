@@ -107,7 +107,7 @@ wand = NodePath("../Wand")
 wait_time = 2.0
 
 [node name="StopSpawnTimer" type="Timer" parent="Spawner"]
-wait_time = 10.0
+wait_time = 30.0
 one_shot = true
 
 [node name="SpawnArea" type="StaticBody3D" parent="Spawner"]
