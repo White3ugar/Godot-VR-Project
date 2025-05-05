@@ -3,7 +3,7 @@ extends CanvasLayer
 var popped_count: int = 0
 
 @onready var label = $BalloonCountLabel
-var countdown_time := 10  # seconds
+var countdown_time := 30  # seconds
 var countdown_timer: Timer
 signal countdown_finished(popped_count)
 
