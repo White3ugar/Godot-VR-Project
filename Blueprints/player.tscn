@@ -37,3 +37,5 @@ metadata/_custom_type_script = "uid://bd1okn01tck3y"
 
 [node name="PlayerBody" parent="." groups=["player"] instance=ExtResource("5_aoko6")]
 collision_layer = 524543
+player_height_min = 1.0
+player_height_max = 1.5

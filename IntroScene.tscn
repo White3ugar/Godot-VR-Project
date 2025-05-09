@@ -1,5 +1,6 @@
-[gd_scene load_steps=17 format=3 uid="uid://ce4g1evrau2hb"]
+[gd_scene load_steps=18 format=3 uid="uid://ce4g1evrau2hb"]
 
+[ext_resource type="Script" uid="uid://4eyy6vwrikxg" path="res://intro_scene.gd" id="1_wklgl"]
 [ext_resource type="PackedScene" uid="uid://dv1syolijfw1l" path="res://world.tscn" id="2_s3v86"]
 [ext_resource type="Script" uid="uid://d3oa7cmk3nsf7" path="res://Teleportation.gd" id="3_b8tfy"]
 [ext_resource type="PackedScene" uid="uid://kfuyhi5g2gnm" path="res://Blueprints/player.tscn" id="4_k328c"]
@@ -40,6 +41,7 @@ size = Vector3(1.19238, 1.92786, 1.0907)
 [sub_resource type="BoxShape3D" id="BoxShape3D_ddp6y"]
 
 [node name="TeleportGate" type="Area3D"]
+script = ExtResource("1_wklgl")
 
 [node name="Player" parent="." groups=["player"] instance=ExtResource("4_k328c")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.43623, 2.05896, 2.90984)

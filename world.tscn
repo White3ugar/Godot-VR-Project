@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://dv1syolijfw1l"]
+[gd_scene load_steps=25 format=3 uid="uid://dv1syolijfw1l"]
 
 [ext_resource type="Script" uid="uid://davxwd1m4br63" path="res://main.gd" id="1_f3sb7"]
 [ext_resource type="PackedScene" uid="uid://kfuyhi5g2gnm" path="res://Blueprints/player.tscn" id="2_fj7yv"]
@@ -7,8 +7,9 @@
 [ext_resource type="Script" uid="uid://bciqyrxiutf0n" path="res://spawner.gd" id="6_dwbse"]
 [ext_resource type="PackedScene" uid="uid://b4vcu1g158uxb" path="res://Assets/MainRoom.glb" id="7_gbfbk"]
 [ext_resource type="PackedScene" uid="uid://c06n0yyou5nwm" path="res://Objects/notice_board.tscn" id="7_pkg7o"]
-[ext_resource type="PackedScene" uid="uid://c26bnu4h50a8j" path="res://game_over_panel.tscn" id="9_ioo17"]
-[ext_resource type="PackedScene" uid="uid://j38vx80oxv32" path="res://BalloonScoreUI.tscn" id="9_wse8f"]
+[ext_resource type="Script" uid="uid://vnedl6tfrcn5" path="res://game_manager.gd" id="10_wse8f"]
+[ext_resource type="PackedScene" uid="uid://dvqfoh3do4ynd" path="res://Assets/AnimatedModel/Defeat.fbx" id="13_70uel"]
+[ext_resource type="PackedScene" uid="uid://snhxykt320js" path="res://Assets/AnimatedModel/Victory.fbx" id="14_hiqwa"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gv5m4"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -75,6 +76,9 @@ omni_attenuation = 0.7
 [node name="XROrigin3D" parent="." instance=ExtResource("2_fj7yv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.68176, -0.220411)
 
+[node name="XRCamera3D" parent="XROrigin3D" index="0"]
+current = true
+
 [node name="Ground" type="StaticBody3D" parent="."]
 transform = Transform3D(1.01225, 0, 0, 0, 1.01225, 0, 0, 0, 0.795202, 0, -0.0551452, -0.189718)
 
@@ -95,19 +99,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.50505, 0, -3.96811)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.129998, 0.474719, 0)
 shape = SubResource("BoxShape3D_aqk2v")
 
-[node name="Spawner" type="Node3D" parent="." node_paths=PackedStringArray("balloon_ui", "platform_node", "wand")]
+[node name="Spawner" type="Node3D" parent="." node_paths=PackedStringArray("platform_node", "wand", "notice_board_node", "notice_board_label")]
 script = ExtResource("6_dwbse")
 balloon_scene = ExtResource("5_036b0")
-balloon_ui = NodePath("../BalloonUI")
 platform_node = NodePath("SpawnArea")
 spawn_interval = 2.0
 wand = NodePath("../Wand")
+notice_board_node = NodePath("../NoticeBoard")
+notice_board_label = NodePath("../NoticeBoard/noticeText")
 
 [node name="SpawnTimer" type="Timer" parent="Spawner"]
 wait_time = 2.0
 
 [node name="StopSpawnTimer" type="Timer" parent="Spawner"]
-wait_time = 30.0
+wait_time = 10.0
 one_shot = true
 
 [node name="SpawnArea" type="StaticBody3D" parent="Spawner"]
@@ -153,11 +158,27 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.63282, 0.83841, 1.51436)
 visible = false
 shape = SubResource("BoxShape3D_2o6r5")
 
-[node name="BalloonUI" parent="." instance=ExtResource("9_wse8f")]
+[node name="GameManager" type="Node" parent="." node_paths=PackedStringArray("spawner", "victory_model", "defeat_model", "player_camera", "victory_mesh_instance", "defeat_mesh_instance")]
+script = ExtResource("10_wse8f")
+spawner = NodePath("../Spawner")
+victory_model = NodePath("victory_model")
+defeat_model = NodePath("defeat_model")
+player_camera = NodePath("../XROrigin3D/XRCamera3D")
+victory_mesh_instance = NodePath("victory_model/Skeleton3D/Ch39")
+defeat_mesh_instance = NodePath("defeat_model/Skeleton3D/Ch39")
+
+[node name="defeat_model" parent="GameManager" instance=ExtResource("13_70uel")]
+transform = Transform3D(0.945126, 0, -0.326707, 0, 1, 0, 0.326707, 0, 0.945126, -1.02367, 0, -3.74932)
 visible = false
 
-[node name="GameOverPanel" parent="." instance=ExtResource("9_ioo17")]
+[node name="victory_model" parent="GameManager" instance=ExtResource("14_hiqwa")]
+transform = Transform3D(0.928291, 0, -0.371854, 0, 1, 0, 0.371854, 0, 0.928291, -1.00924, 0, -3.81009)
+visible = false
 
 [connection signal="timeout" from="Spawner/SpawnTimer" to="Spawner" method="_on_spawn_timer_timeout"]
 [connection signal="timeout" from="Spawner/StopSpawnTimer" to="Spawner" method="_on_StopSpawnTimer_timeout"]
-[connection signal="countdown_finished" from="BalloonUI" to="GameOverPanel" method="_on_balloon_ui_countdown_finished"]
+
+[editable path="XROrigin3D"]
+[editable path="NoticeBoard"]
+[editable path="GameManager/defeat_model"]
+[editable path="GameManager/victory_model"]

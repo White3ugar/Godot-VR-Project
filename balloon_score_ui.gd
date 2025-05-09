@@ -1,17 +1,18 @@
-extends CanvasLayer
+extends Control  # Changed from CanvasLayer to Control
 
 var popped_count: int = 0
 
 @onready var label = $BalloonCountLabel
+@onready var timer_label = $TimerLabel
+
 var countdown_time := 30  # seconds
 var countdown_timer: Timer
 signal countdown_finished(popped_count)
 
-
 func _ready():
 	# Set initial text
 	label.text = "Balloons Popped: %d" % popped_count
-	$TimerLabel.text = "Time Left: %ds" % countdown_time
+	timer_label.text = "Time Left: %ds" % countdown_time
 
 	# Create timer but don't start yet
 	countdown_timer = Timer.new()
@@ -20,8 +21,8 @@ func _ready():
 	countdown_timer.timeout.connect(_on_countdown_tick)
 	add_child(countdown_timer)
 
-	# Connect to visibility change
-	self.visibility_changed.connect(_on_visibility_changed)
+	# Connect to visibility change (only works for CanvasItem-based nodes like Control)
+	connect("visibility_changed", Callable(self, "_on_visibility_changed"))
 
 func _on_visibility_changed():
 	if self.visible:
@@ -38,7 +39,7 @@ func increment_count():
 
 func _on_countdown_tick():
 	countdown_time -= 1
-	$TimerLabel.text = "Time Left: %ds" % countdown_time
+	timer_label.text = "Time Left: %ds" % countdown_time
 	
 	if countdown_time <= 0:
 		countdown_timer.stop()
