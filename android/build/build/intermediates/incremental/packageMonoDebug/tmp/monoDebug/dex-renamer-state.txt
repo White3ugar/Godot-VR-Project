@@ -1,0 +1,10 @@
+#Mon May 12 19:54:23 MYT 2025
+base.2=C\:\\Users\\User\\Documents\\Computer Game Development\\Task 5_2\\try1\\Godot-VR-Project\\android\\build\\build\\intermediates\\dex\\monoDebug\\mergeProjectDexMonoDebug\\6\\classes.dex
+path.2=6/classes.dex
+base.1=C\:\\Users\\User\\Documents\\Computer Game Development\\Task 5_2\\try1\\Godot-VR-Project\\android\\build\\build\\intermediates\\dex\\monoDebug\\mergeProjectDexMonoDebug\\0\\classes.dex
+path.1=0/classes.dex
+base.0=C\:\\Users\\User\\Documents\\Computer Game Development\\Task 5_2\\try1\\Godot-VR-Project\\android\\build\\build\\intermediates\\dex\\monoDebug\\mergeExtDexMonoDebug\\classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex
