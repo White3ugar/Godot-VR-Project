@@ -15,9 +15,9 @@
                     "to": {
                         "startLines": "3",
                         "startColumns": "4",
-                        "startOffsets": "114",
+                        "startOffsets": "133",
                         "endColumns": "100",
-                        "endOffsets": "210"
+                        "endOffsets": "229"
                     }
                 },
                 {
@@ -26,15 +26,15 @@
                         "startLines": "3",
                         "startColumns": "1",
                         "startOffsets": "112",
-                        "endColumns": "55",
-                        "endOffsets": "166"
+                        "endColumns": "74",
+                        "endOffsets": "185"
                     },
                     "to": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
-                        "endColumns": "58",
-                        "endOffsets": "109"
+                        "endColumns": "77",
+                        "endOffsets": "128"
                     }
                 }
             ]

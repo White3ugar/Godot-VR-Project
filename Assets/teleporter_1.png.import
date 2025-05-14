@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4lp5fh8jvk2k"
 path.s3tc="res://.godot/imported/teleporter_1.png-f4641a751e49ffe9859eebe3b63e57b3.s3tc.ctex"
+path.etc2="res://.godot/imported/teleporter_1.png-f4641a751e49ffe9859eebe3b63e57b3.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/teleporter_1.png"
-dest_files=["res://.godot/imported/teleporter_1.png-f4641a751e49ffe9859eebe3b63e57b3.s3tc.ctex"]
+dest_files=["res://.godot/imported/teleporter_1.png-f4641a751e49ffe9859eebe3b63e57b3.s3tc.ctex", "res://.godot/imported/teleporter_1.png-f4641a751e49ffe9859eebe3b63e57b3.etc2.ctex"]
 
 [params]
 

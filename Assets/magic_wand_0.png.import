@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx8dbl8fib3bx"
 path.s3tc="res://.godot/imported/magic_wand_0.png-8c963b105fd7796362c7fb3e0659b18b.s3tc.ctex"
+path.etc2="res://.godot/imported/magic_wand_0.png-8c963b105fd7796362c7fb3e0659b18b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/magic_wand_0.png"
-dest_files=["res://.godot/imported/magic_wand_0.png-8c963b105fd7796362c7fb3e0659b18b.s3tc.ctex"]
+dest_files=["res://.godot/imported/magic_wand_0.png-8c963b105fd7796362c7fb3e0659b18b.s3tc.ctex", "res://.godot/imported/magic_wand_0.png-8c963b105fd7796362c7fb3e0659b18b.etc2.ctex"]
 
 [params]
 

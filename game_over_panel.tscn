@@ -1,41 +1,41 @@
 [gd_scene load_steps=3 format=3 uid="uid://c26bnu4h50a8j"]
 
-[ext_resource type="Script" uid="uid://bjny6v5cfsn34" path="res://game_over_panel.gd" id="1_gj7sw"]
+[ext_resource type="PackedScene" uid="uid://d1hqfyf7lkf2o" path="res://Assets/GameOverBoard.glb" id="1_vkad1"]
 [ext_resource type="FontFile" uid="uid://dcltext1qkvxg" path="res://Assets/Font Assets/Sakitu Baelah Clean.otf" id="2_vkad1"]
 
-[node name="GameOverUI" type="CanvasLayer"]
-script = ExtResource("1_gj7sw")
+[node name="Node3D" type="Node3D"]
 
-[node name="GameOverPanel" type="Panel" parent="."]
-offset_right = 1153.0
-offset_bottom = 654.0
+[node name="GameOverBoard" parent="." instance=ExtResource("1_vkad1")]
+transform = Transform3D(1.37384, 0, 0, 0, 1.11655, 0, 0, 0, 1, 0, 0, 0)
 
-[node name="GameOver" type="Label" parent="GameOverPanel"]
-layout_mode = 0
-offset_left = 491.0
-offset_top = 164.0
-offset_right = 656.0
-offset_bottom = 234.0
-theme_override_fonts/font = ExtResource("2_vkad1")
-theme_override_font_sizes/font_size = 70
-text = "Game Over"
+[node name="GameOver" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.46868, 0.0395733)
+text = "Game Over!
+"
+font = ExtResource("2_vkad1")
+font_size = 55
+outline_size = 10
 
-[node name="PopCount" type="Label" parent="GameOverPanel"]
-layout_mode = 0
-offset_left = 393.0
-offset_top = 275.0
-offset_right = 781.0
-offset_bottom = 345.0
-theme_override_fonts/font = ExtResource("2_vkad1")
-theme_override_font_sizes/font_size = 70
-text = "You popped X balloons!"
+[node name="BalloonCount" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.24766, 0.04)
+text = "You poked x balloons!"
+font = ExtResource("2_vkad1")
+font_size = 30
+outline_size = 10
 
-[node name="Timesup" type="Label" parent="GameOverPanel"]
-layout_mode = 0
-offset_left = 503.0
-offset_top = 393.0
-offset_right = 653.0
-offset_bottom = 463.0
-theme_override_fonts/font = ExtResource("2_vkad1")
-theme_override_font_sizes/font_size = 70
-text = "Time’s up!"
+[node name="WinLabel" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95515, 0.0395733)
+visible = false
+text = "You poked over 10 balloons 
+the wizard's spell is broken!"
+font = ExtResource("2_vkad1")
+font_size = 35
+outline_size = 10
+
+[node name="LoseLabel" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.934404, 0.04)
+text = "You didn’t poke enough... 
+the wizard keeps his magic !"
+font = ExtResource("2_vkad1")
+font_size = 35
+outline_size = 10

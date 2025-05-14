@@ -1,0 +1,39 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dcbl5wc4n8ljw"
+path.s3tc="res://.godot/imported/GameOverBoard_0.png-659aa0bc218886682533d0382a83daaa.s3tc.ctex"
+path.etc2="res://.godot/imported/GameOverBoard_0.png-659aa0bc218886682533d0382a83daaa.etc2.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "110cf2f00b98b778b3d193cc1e78d815"
+}
+
+[deps]
+
+source_file="res://Assets/GameOverBoard_0.png"
+dest_files=["res://.godot/imported/GameOverBoard_0.png-659aa0bc218886682533d0382a83daaa.s3tc.ctex", "res://.godot/imported/GameOverBoard_0.png-659aa0bc218886682533d0382a83daaa.etc2.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

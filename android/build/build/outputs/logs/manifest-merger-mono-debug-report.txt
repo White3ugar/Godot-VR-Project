@@ -10,9 +10,9 @@ INJECTED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Go
 manifest
 ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\AndroidManifest.xml:2:1-62:12
 MERGED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:2:1-44:12
 MERGED from [godot-lib.template_debug.aar] C:\Users\User\.gradle\caches\transforms-3\ee03cb21ae1339c6a01f130a9ed72dde\transformed\jetified-godot-lib.template_debug\AndroidManifest.xml:2:1-35:12
 MERGED from [godotopenxr-pico-debug.aar] C:\Users\User\.gradle\caches\transforms-3\bd6e117aebf82e89e98d59692f20bb1d\transformed\jetified-godotopenxr-pico-debug\AndroidManifest.xml:2:1-52:12
 MERGED from [androidx.fragment:fragment:1.7.1] C:\Users\User\.gradle\caches\transforms-3\34ec294f6bdde40744063ea74c4e92c4\transformed\fragment-1.7.1\AndroidManifest.xml:2:1-7:12
@@ -77,7 +77,7 @@ application
 ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\AndroidManifest.xml:18:5-60:19
 MERGED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\AndroidManifest.xml:18:5-60:19
 MERGED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\AndroidManifest.xml:18:5-60:19
-INJECTED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:13:5-42:19
+INJECTED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:14:5-43:19
 MERGED from [godot-lib.template_debug.aar] C:\Users\User\.gradle\caches\transforms-3\ee03cb21ae1339c6a01f130a9ed72dde\transformed\jetified-godot-lib.template_debug\AndroidManifest.xml:9:5-33:19
 MERGED from [godot-lib.template_debug.aar] C:\Users\User\.gradle\caches\transforms-3\ee03cb21ae1339c6a01f130a9ed72dde\transformed\jetified-godot-lib.template_debug\AndroidManifest.xml:9:5-33:19
 MERGED from [godotopenxr-pico-debug.aar] C:\Users\User\.gradle\caches\transforms-3\bd6e117aebf82e89e98d59692f20bb1d\transformed\jetified-godotopenxr-pico-debug\AndroidManifest.xml:29:5-50:19
@@ -110,7 +110,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\User\.gradle\cache
 		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\AndroidManifest.xml:20:9-36
 		REJECTED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\AndroidManifest.xml:20:9-36
 	tools:replace
-		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:20:9-143
+		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:21:9-143
 	android:isGame
 		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\AndroidManifest.xml:23:9-30
 		REJECTED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\AndroidManifest.xml:23:9-30
@@ -131,7 +131,7 @@ MERGED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godo
 MERGED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\AndroidManifest.xml:41:9-58:20
 REJECTED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\AndroidManifest.xml:53:13-57:29
 	tools:node
-		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:23:140-172
+		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:24:140-172
 	android:screenOrientation
 		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\AndroidManifest.xml:48:13-50
 		REJECTED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\AndroidManifest.xml:48:13-50
@@ -160,7 +160,7 @@ REJECTED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Go
 		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\AndroidManifest.xml:44:13-55
 		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\AndroidManifest.xml:44:13-55
 	tools:replace
-		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:23:44-139
+		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:24:44-139
 	android:name
 		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\AndroidManifest.xml:42:13-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.LAUNCHER
@@ -177,32 +177,36 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\AndroidManifest.xml:56:17-77
 	android:name
 		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\AndroidManifest.xml:56:27-74
-uses-feature#android.hardware.vulkan.level
-ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:11:5-132
-	android:version
-		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:11:110-129
-	tools:node
-		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:11:19-39
-	android:required
-		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:11:85-109
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:11:40-84
-uses-feature#android.hardware.vulkan.version
-ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:12:5-140
+		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:11:22-64
+uses-feature#android.hardware.vulkan.level
+ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:12:5-132
 	android:version
-		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:12:111-137
+		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:12:110-129
 	tools:node
 		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:12:19-39
 	android:required
-		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:12:87-110
+		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:12:85-109
 	android:name
-		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:12:40-86
+		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:12:40-84
+uses-feature#android.hardware.vulkan.version
+ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:13:5-140
+	android:version
+		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:13:111-137
+	tools:node
+		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:13:19-39
+	android:required
+		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:13:87-110
+	android:name
+		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:13:40-86
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER+category:name:org.khronos.openxr.intent.category.IMMERSIVE_HMD
-ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:30:5-39:21
+ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:31:5-40:21
 category#org.khronos.openxr.intent.category.IMMERSIVE_HMD
-ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:35:6-82
+ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:36:6-82
 	android:name
-		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:35:16-79
+		ADDED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml:36:16-79
 uses-sdk
 INJECTED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\User\Documents\Computer Game Development\Task 5_2\try1\Godot-VR-Project\android\build\src\debug\AndroidManifest.xml

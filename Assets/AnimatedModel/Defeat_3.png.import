@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dh0f7pdbmon00"
 path.s3tc="res://.godot/imported/Defeat_3.png-32a02d7e464f53dd8d25ed1c47ed440b.s3tc.ctex"
+path.etc2="res://.godot/imported/Defeat_3.png-32a02d7e464f53dd8d25ed1c47ed440b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/AnimatedModel/Defeat_3.png"
-dest_files=["res://.godot/imported/Defeat_3.png-32a02d7e464f53dd8d25ed1c47ed440b.s3tc.ctex"]
+dest_files=["res://.godot/imported/Defeat_3.png-32a02d7e464f53dd8d25ed1c47ed440b.s3tc.ctex", "res://.godot/imported/Defeat_3.png-32a02d7e464f53dd8d25ed1c47ed440b.etc2.ctex"]
 
 [params]
 

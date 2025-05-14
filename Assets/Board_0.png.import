@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkg6otodmgtyn"
 path.s3tc="res://.godot/imported/Board_0.png-72c0659218f92f713838f770501af011.s3tc.ctex"
+path.etc2="res://.godot/imported/Board_0.png-72c0659218f92f713838f770501af011.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/Board_0.png"
-dest_files=["res://.godot/imported/Board_0.png-72c0659218f92f713838f770501af011.s3tc.ctex"]
+dest_files=["res://.godot/imported/Board_0.png-72c0659218f92f713838f770501af011.s3tc.ctex", "res://.godot/imported/Board_0.png-72c0659218f92f713838f770501af011.etc2.ctex"]
 
 [params]
 

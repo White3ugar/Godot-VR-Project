@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://ce4g1evrau2hb"]
+[gd_scene load_steps=19 format=3 uid="uid://ce4g1evrau2hb"]
 
 [ext_resource type="Script" uid="uid://4eyy6vwrikxg" path="res://intro_scene.gd" id="1_wklgl"]
 [ext_resource type="PackedScene" uid="uid://dv1syolijfw1l" path="res://world.tscn" id="2_s3v86"]
@@ -16,6 +16,9 @@ radius = 1.51627
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_7i5ds"]
 radius = 1.9343
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ugr7t"]
+size = Vector3(8.2179, 3.91516, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_s3v86"]
 size = Vector3(8.45502, 1, 11.087)
@@ -76,6 +79,13 @@ visible = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.527209, 0.446096, 2.15701)
 visible = false
 shape = SubResource("SphereShape3D_fuqde")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.69492)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7016, 1.45758, -0.934932)
+shape = SubResource("BoxShape3D_ugr7t")
 
 [node name="Yard" type="StaticBody3D" parent="."]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cctai2f5be73m"
 path.s3tc="res://.godot/imported/fairy_yard_15.png-db4f0e26b3a806b9d240d0c85be6f439.s3tc.ctex"
+path.etc2="res://.godot/imported/fairy_yard_15.png-db4f0e26b3a806b9d240d0c85be6f439.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/fairy_yard_15.png"
-dest_files=["res://.godot/imported/fairy_yard_15.png-db4f0e26b3a806b9d240d0c85be6f439.s3tc.ctex"]
+dest_files=["res://.godot/imported/fairy_yard_15.png-db4f0e26b3a806b9d240d0c85be6f439.s3tc.ctex", "res://.godot/imported/fairy_yard_15.png-db4f0e26b3a806b9d240d0c85be6f439.etc2.ctex"]
 
 [params]
 

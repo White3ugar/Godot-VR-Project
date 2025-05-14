@@ -9,10 +9,12 @@
 transform = Transform3D(23.3106, 0, 0, 0, -1.01894e-06, -23.3106, 0, 23.3106, -1.01894e-06, 0, 0, 0)
 
 [node name="noticeText" type="Label3D" parent="."]
-transform = Transform3D(0.304256, 0, 0, 0, 0.304256, 0, 0, 0, 0.255764, -0.000443064, 0.106985, 0.0561059)
+transform = Transform3D(0.304256, 0, 0, 0, 0.304256, 0, 0, 0, 0.255764, -0.000443064, 0.0183039, 0.0561059)
 modulate = Color(0.63186, 0.633384, 0.244687, 1)
 text = "Grab the wand! 
- Balloons pop in after 3s!"
+ Balloons pop in after 3s!
+Poke past 10 balloons and 
+watch the happiness unfold!"
 font = ExtResource("2_6jlun")
-font_size = 300
+font_size = 200
 outline_size = 1

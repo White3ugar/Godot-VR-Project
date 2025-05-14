@@ -11,7 +11,7 @@ extends Node3D
 var platform_size: Vector2
 var spawn_timer_started: bool = false
 var popped_count: int = 0
-var countdown_time: int = 10  # seconds
+var countdown_time: int = 30  # seconds
 var countdown_timer: Timer
 
 signal game_over(popped_count: int)
@@ -52,7 +52,7 @@ func _on_wand_grabbed():
 		$SpawnTimer.wait_time = spawn_interval
 		$SpawnTimer.start()
 		$StopSpawnTimer.start()
-		countdown_time = 10
+		countdown_time = 30
 		popped_count = 0
 		countdown_timer.start()
 		spawn_timer_started = true
@@ -104,6 +104,6 @@ func _on_countdown_tick():
 
 func _update_notice_label():
 	if notice_board_label:
-		notice_board_label.text = "🎈 Balloons Popped: %d\n⏳ Time Left: %ds" % [popped_count, countdown_time]
+		notice_board_label.text = "🎈 Balloons Popped: %d\n\n⏳ Time Left: %ds" % [popped_count, countdown_time]
 	else:
 		print("⚠️ Notice board label not assigned!")
