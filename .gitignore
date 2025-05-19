@@ -13,3 +13,7 @@ export_presets.cfg
 .mono/
 data_*/
 mono_crash.*.json
+android/build/libs/debug/godot-lib.template_debug.aar
+Builds/MagicalBalloonADventure.apk
+android/build/build/outputs/apk/mono/debug/android_monoDebug.apk
+android/build/build/intermediates/merged_jni_libs/monoDebug/out/godot-lib.template_debug.aar

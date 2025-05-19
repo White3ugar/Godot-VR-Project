@@ -4,7 +4,7 @@
     "type": "PACKAGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.example.PICOProject",
+  "applicationId": "com.example.MagicalBalloonADventure",
   "variantName": "monoDebug",
   "elements": [
     {
